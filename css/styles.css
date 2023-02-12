@@ -153,7 +153,9 @@ img {
 .hero {
     padding-top: 188px;
     padding-bottom: 188px;
-    
+    margin: 0 auto;
+
+    max-width: 1440px;
     text-align: center;
     background-color: var(--primary-text-color);
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/dark-bg.jpg');
@@ -196,6 +198,7 @@ img {
 
 .button.primary {
     background-color: var(--primary-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .button.primary:focus,
@@ -225,9 +228,10 @@ img {
 }
 
 .strategy-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 8px;
-    padding: 24px 100px;
-    width: 264px;
     height: 112px;
     background-color: var(--bg-color);
     border-radius: 4px;
@@ -283,7 +287,6 @@ img {
 /* p for text */
 
 .title-text {
-    margin-bottom: 8px;
     color: var(--title-text-color);
     font-size: 16px;
     line-height: 1.5;
@@ -316,6 +319,12 @@ img {
 .card {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
+
+.card:hover,
+.card:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .section.portfolio {
     padding-top: 96px;
     padding-bottom: 120px;
@@ -352,9 +361,10 @@ img {
 
  .button-filter:focus,
  .button-filter:hover {
-     color: var(--bg-body);
-     background-color: var(--primary-color-dark);
-     border-color: transparent;
+    color: var(--bg-body);
+    background-color: var(--primary-color-dark);
+    border-color: transparent;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
  }
 
   .card-content {
@@ -473,8 +483,9 @@ padding: 130px 156px 120px;
 }
 
 .social-list-link {
-    padding: 12px;
     display: block;
+    padding: 8px;
+    
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -482,7 +493,7 @@ padding: 130px 156px 120px;
 }
 
 .footer-social-content .social-list-link {
-    background-color: rgba(255, 255, 255, 0.1);;
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
  .footer-social-content .social-list-link:hover,
@@ -492,8 +503,8 @@ padding: 130px 156px 120px;
 
 .social-list-icon {
     fill: var(--bg-color);
-    width: 16px;
-    height: 16px;
+    width: 24px;
+    height: 24px;
 }
 
 .social-list-link:hover,
