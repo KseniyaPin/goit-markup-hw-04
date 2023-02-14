@@ -493,9 +493,10 @@ padding: 120px 0;
 }
 
 .social-list-link {
-    display: block;
-    padding: 12px;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -508,8 +509,9 @@ padding: 120px 0;
 }
 
 .footer-social-link {
-    display: block;
-    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
     width: 40px;
     height: 40px;
